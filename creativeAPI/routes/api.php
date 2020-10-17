@@ -14,6 +14,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//create the database and migrations
+//create model
+//create controller to retrieve info from database
+//return info
+
+
+Route:: get('/test', function () {
+    return ['message' => 'hello'];
+});
+
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
